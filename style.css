@@ -1,0 +1,31 @@
+.hero-section {
+    position: relative;
+    background-image: url('assets/img/hero.jpg'); /* Ganti dengan path gambar baru Anda */
+    background-size: cover; /* Mengisi seluruh area tanpa mengulang */
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh; /* Sesuaikan tinggi dengan layar penuh */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .hero-content {
+    position: relative;
+    z-index: 2;
+    background-color: rgba(255, 255, 255, 0.423); /* Tambahkan latar belakang transparan jika diperlukan */
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
+  /* Responsif untuk perangkat kecil */
+  @media (max-width: 768px) {
+    .hero-section {
+      background-position: top; /* Menempatkan gambar pada posisi atas untuk fokus */
+      height: 60vh; /* Tinggi yang lebih kecil untuk perangkat seluler */
+    }
+    .hero-content {
+      padding: 15px;
+    }
+  }
+  
